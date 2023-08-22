@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         <title>Elmahdy Seafood</title>
         <meta name="description" content="Elmahdy for all types of seafood" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/Logo.png" />
       </Head>
       <Navbar />
       <main>
