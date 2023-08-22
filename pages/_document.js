@@ -1,13 +1,13 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="bg-gray-200 overflow-hidden h-screen rtl">
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
