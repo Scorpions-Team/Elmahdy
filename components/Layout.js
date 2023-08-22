@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Navbar />
-      <main className="h-full">
+      <main>
         <AnimatePresence mode="wait">{children}</AnimatePresence>
       </main>
     </>
