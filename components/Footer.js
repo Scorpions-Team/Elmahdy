@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <motion.footer
       variants={footerVariants}
-      className="w-full p-4 text-center text-lg"
+      className="w-full p-4 text-center text-lg absolute bottom-0 left-0"
     >
       2023 &copy; تم إنشائه بواسطه{" "}
       <a

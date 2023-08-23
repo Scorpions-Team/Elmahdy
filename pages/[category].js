@@ -54,7 +54,7 @@ export default function Category() {
       initial="hide"
       animate="show"
       exit="exit"
-      className="min-h-screen pt-36 pb-15 background"
+      className="min-h-screen pt-36 pb-20 background relative"
     >
       <Navbar />
       {isLoading ? (

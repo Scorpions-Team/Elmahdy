@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Elmahdy Seafood</title>
+        <title>المهدي للمأكولات البحرية</title>
         <meta name="description" content="Elmahdy for all types of seafood" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.png" />
