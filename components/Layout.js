@@ -8,6 +8,10 @@ const Layout = ({ children }) => {
       <Head>
         <title>المهدي للمأكولات البحرية</title>
         <meta name="description" content="Elmahdy for all types of seafood" />
+        <meta
+          name="google-site-verification"
+          content="OMH7wWSmsl7zK8fchGabFF0v5n4NVUoq7vkhYPNmr7Q"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.png" />
       </Head>
