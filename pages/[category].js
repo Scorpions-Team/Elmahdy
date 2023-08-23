@@ -3,6 +3,8 @@ import useSWR from "swr";
 import { useRouter } from "next/router";
 import ItemCard from "@components/ItemCard";
 import { motion } from "framer-motion";
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
 
 export const contactVariants = {
   hide: {},
@@ -52,15 +54,22 @@ export default function Category() {
       initial="hide"
       animate="show"
       exit="exit"
-      className="h-[calc(100vh-93px)] py-20 overflow-y-scroll"
+      className="min-h-screen pt-36 pb-15 background"
     >
+      <Navbar />
       {isLoading ? (
-        <motion.h1 variants={formVariants} className="text-center text-7xl">
+        <motion.h1
+          variants={formVariants}
+          className="text-center md:text-7xl text-5xl"
+        >
           جاري التحميل...
         </motion.h1>
       ) : (
         <>
-          <motion.h1 variants={formVariants} className="text-center text-7xl">
+          <motion.h1
+            variants={formVariants}
+            className="text-center md:text-7xl text-5xl"
+          >
             السلع المتاحة
           </motion.h1>
 
@@ -73,6 +82,7 @@ export default function Category() {
           </div>
         </>
       )}
+      <Footer />
     </motion.section>
   );
 }

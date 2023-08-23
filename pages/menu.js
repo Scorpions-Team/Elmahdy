@@ -2,6 +2,8 @@ import React from "react";
 import useSWR from "swr";
 import CatCard from "@components/CatCard";
 import { motion } from "framer-motion";
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
 
 export const contactVariants = {
   hide: {},
@@ -59,8 +61,9 @@ export default function menu() {
       initial="hide"
       animate="show"
       exit="exit"
-      className="h-[calc(100vh-93px)] pt-10 pb-15 overflow-y-scroll"
+      className="min-h-screen pt-36 pb-15 background"
     >
+      <Navbar />
       {loadingStatus ? (
         <motion.h1
           variants={formVariants}
@@ -93,15 +96,22 @@ export default function menu() {
             </>
           )
         ) : (
-          <motion.h1 variants={formVariants} className="text-center text-7xl">
-            لم يتم احديث الاسعار بعد
+          <motion.h1
+            variants={formVariants}
+            className="text-center md:text-7xl text-5xl mt-20"
+          >
+            لم يتم تحديث الاسعار بعد
           </motion.h1>
         )
       ) : (
-        <motion.h1 variants={formVariants} className="text-center text-7xl">
+        <motion.h1
+          variants={formVariants}
+          className="text-center md:text-7xl text-5xl mt-20"
+        >
           المحل مغلق
         </motion.h1>
       )}
+      <Footer />
     </motion.section>
   );
 }

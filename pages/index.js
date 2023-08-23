@@ -57,7 +57,7 @@ export default function Home() {
             width={200}
             height={200}
             alt="logo"
-            className="w-[100px] h-[100px]"
+            className="w-[100px] h-[100px] md:w-auto md:h-auto"
           />
         </div>
         <p className="md:text-4xl text-xl my-10">
@@ -72,6 +72,13 @@ export default function Home() {
           </button>
         </Link>
       </div>
+      <p className="absolute bottom-0 left-0 w-full p-4 text-center">
+        شارع زين العابدين بجوار البان خوخة:{" "}
+        <a href="tel:033907291">033907291</a> -{" "}
+        <a href="tel:01030106740">01030106740</a> -{" "}
+        <a href="tel:01229130557">01229130557</a> -{" "}
+        <a href="tel:01555338818">01555338818</a>
+      </p>
     </motion.section>
   );
 }

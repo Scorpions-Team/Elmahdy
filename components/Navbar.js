@@ -4,14 +4,31 @@ import React from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
+const navVariants = {
+  hide: {
+    opacity: 0,
+    y: -100,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -100,
+  },
+};
+
 export default function Navbar() {
   const router = useRouter();
 
   return (
     <motion.nav
-      // initial={{ opacity: 0, y: 100 }}
-      // whileInView={{ opacity: 1, y: 0 }}
-      className={`justify-between items-center py-4 px-8 border-black shadow-md border-b bg-gray-200 ${
+      variants={navVariants}
+      className={`justify-between absolute top-0 left-0 w-full items-center py-4 px-8 border-black shadow-md border-b bg-gray-200 ${
         router.asPath === "/" ? "hidden" : "flex"
       }`}
     >

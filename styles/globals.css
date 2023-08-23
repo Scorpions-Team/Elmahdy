@@ -17,3 +17,14 @@ body {
 .cat-card:hover {
   box-shadow: 0px 50px 20px 12px rgba(0, 0, 0, 0.5);
 }
+.background {
+  @apply relative;
+}
+.background::before {
+  content: "";
+  background-image: url("/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @apply absolute top-0 left-0 w-full h-full -z-10 opacity-25;
+}
